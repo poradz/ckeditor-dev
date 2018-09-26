@@ -9,6 +9,7 @@ Fixed Issues:
 * [#2403](https://github.com/ckeditor/ckeditor-dev/issues/2403): Fixed: Styling inline editor initialized inside a table with [Table Selection](https://ckeditor.com/cke4/addon/tabletools) plugin is causing style leaks.
 * [#2514](https://github.com/ckeditor/ckeditor-dev/issues/2403): Fixed: Pasting table data into inline editor initialized inside a table with [Table Selection](https://ckeditor.com/cke4/addon/tabletools) plugin inserts pasted content into a wrapping table.
 * [#2451](https://github.com/ckeditor/ckeditor-dev/issues/2451): Fixed: The [Remove Format](https://ckeditor.com/cke4/addon/removeformat) changes selection.
+* [#2411](https://github.com/ckeditor/ckeditor-dev/issues/2411), [#2438](https://github.com/ckeditor/ckeditor-dev/issues/2438) Fixed: Apply numbered list option throw console error for speciffic markup.
 
 Other Changes:
 
