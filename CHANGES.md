@@ -8,6 +8,10 @@ Fixed Issues:
 * [#1986](https://github.com/ckeditor/ckeditor-dev/issues/1986): Fixed: Cell Properties dialog from [Table Tools](https://ckeditor.com/cke4/addon/tabletools) plugin shows styles that are not allowed through [`config.allowedContent`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_config.html#cfg-allowedContent).
 * [#1268](https://github.com/ckeditor/ckeditor-dev/issues/1268): Fixed: Dropdown doesn't show hover state inside [Balloon Toolbar](https://ckeditor.com/cke4/addon/balloontoolbar).
 
+API Changes:
+
+* [#1268](https://github.com/ckeditor/ckeditor-dev/issues/1268): Exposed the [`CKEDITOR.ui.richCombo.updateState`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_ui_richCombo.html#method-updateState) method.
+
 ## CKEditor 4.11.1
 
 Fixed Issues:
