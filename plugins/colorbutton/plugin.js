@@ -274,7 +274,6 @@ CKEDITOR.plugins.add( 'colorbutton', {
 				// Additionally, if the data is a single color code then let's try to translate it or fallback on the
 				// color code. If the data is a color name/code, then use directly the color name provided.
 				if ( !parts[ 1 ] ) {
-					colorName = '#' + colorName.replace( /^(.)(.)(.)$/, '$1$1$2$2$3$3' );
 					colorLabel = editor.lang.colorbutton.colors[ colorCode ] || colorCode;
 				} else {
 					colorLabel = colorName;
@@ -283,8 +282,8 @@ CKEDITOR.plugins.add( 'colorbutton', {
 				output.push( '<td>' +
 					'<a class="cke_colorbox" _cke_focus=1 hidefocus=true' +
 						' title="', colorLabel, '"' +
-						' onclick="CKEDITOR.tools.callFunction(', clickFn, ',\'', colorName, '\',\'', type, '\'); return false;"' +
-						' href="javascript:void(\'', colorLabel, '\')"' +
+						' onclick="CKEDITOR.tools.callFunction(', clickFn, ',\'#', colorCode, '\',\'', type, '\'); return false;"' +
+						' href="javascript:void(\'', colorCode, '\')"' +
 						' data-value="' + colorCode + '"' +
 						' role="option" aria-posinset="', ( i + 2 ), '" aria-setsize="', total, '">' +
 						'<span class="cke_colorbox" style="background-color:#', colorCode, '"></span>' +
