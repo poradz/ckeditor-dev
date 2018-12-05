@@ -6,6 +6,7 @@
 Fixed Issues:
 
 * [#1986](https://github.com/ckeditor/ckeditor-dev/issues/1986): Fixed: Cell Properties dialog from [Table Tools](https://ckeditor.com/cke4/addon/tabletools) plugin shows styles that are not allowed through [`config.allowedContent`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_config.html#cfg-allowedContent).
+* [#1478](https://github.com/ckeditor/ckeditor-dev/issues/1478): Fixed: Custom colors added to [Color Button](https://ckeditor.com/cke4/addon/colorbutton) via [`colorButton_colors`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_config.html#cfg-colorButton_colors) in form label/code don't work correctly.
 
 Other Changes:
 
