@@ -235,7 +235,7 @@ CKEDITOR.plugins.add( 'colorbutton', {
 
 					editor.focus();
 					if ( color ) {
-						editor.applyStyle( new CKEDITOR.style( colorStyle, { color: color } ) );
+						editor.applyStyle( new CKEDITOR.style( colorStyle, { color: '#' + color } ) );
 					}
 					editor.fire( 'saveSnapshot' );
 				}
@@ -282,7 +282,7 @@ CKEDITOR.plugins.add( 'colorbutton', {
 				output.push( '<td>' +
 					'<a class="cke_colorbox" _cke_focus=1 hidefocus=true' +
 						' title="', colorLabel, '"' +
-						' onclick="CKEDITOR.tools.callFunction(', clickFn, ',\'#', colorCode, '\',\'', type, '\'); return false;"' +
+						' onclick="CKEDITOR.tools.callFunction(', clickFn, ',\'', colorCode, '\',\'', type, '\'); return false;"' +
 						' href="javascript:void(\'', colorCode, '\')"' +
 						' data-value="' + colorCode + '"' +
 						' role="option" aria-posinset="', ( i + 2 ), '" aria-setsize="', total, '">' +
